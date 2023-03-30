@@ -24,14 +24,14 @@ app.use("/answer", answerRoutes);
 
 const PORT = process.env.PORT || 6000;
 
-const DATABASE_URL = process.env.CENNECTION_URL;
+const ADMIN = process.env.ADMIN;
+const PASSWORD = process.env.PASSWORD;
 
 mongoose.set("strictQuery", true);
 
 mongoose
   .connect(
-    "mongodb+srv://admin:admin@stackoverflow.umbwgmv.mongodb.net/?retryWrites=true&w=majority",
-    DATABASE_URL,
+    `mongodb+srv://${ADMIN}:${PASSWORD}@stackoverflow.umbwgmv.mongodb.net/?retryWrites=true&w=majority`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
