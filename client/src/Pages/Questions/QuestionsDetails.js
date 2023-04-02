@@ -22,7 +22,7 @@ function QuestionsDetails() {
   const dispatch = useDispatch();
   const User = useSelector((state) => state.currentUserReducer);
   const location = useLocation();
-  const url = "https://stack-overflow-clone-peach.vercel.app";
+  const url = "https://stack-overflow-qefm.vercel.app";
 
   // const User = "Nirmal";
 

@@ -8,7 +8,6 @@ import Avatar from "../../Components/Avatar/Avatar";
 
 function DisplayAnswer({ question, handleShare }) {
   const { id } = useParams();
-  // const User = "Nirmal";
   const dispatch = useDispatch();
   const User = useSelector((state) => state.currentUserReducer);
 
